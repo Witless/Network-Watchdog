@@ -1,0 +1,102 @@
+{
+  "network": {
+    "nodes": [
+      {
+        "id": "1",
+        "type": "switch",
+        "ip": "N/A",
+        "ports": [
+          {
+            "port_no": "00000001",
+            "status": "unknown",
+            "mac": "2a:b7:49:2e:6d:98"
+          }
+        ],
+        "flows": [
+          {
+            "flow_id": 0,
+            "in_port": "0",
+            "src_ip": "0",
+            "dst_ip": "0",
+            "byte_count": 300,
+            "packet_count": 5,
+            "priority": 65535,
+            "timestamp": "2025-05-28T15:34:09.114773",
+            "actions": "NORMAL"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "type": "switch",
+        "ip": "N/A",
+        "ports": [
+          {
+            "port_no": "00000001",
+            "status": "unknown",
+            "mac": "b2:65:e2:d7:1e:0b"
+          }
+        ],
+        "flows": [
+          {
+            "flow_id": 0,
+            "in_port": "0",
+            "src_ip": "0",
+            "dst_ip": "0",
+            "byte_count": 300,
+            "packet_count": 5,
+            "priority": 65535,
+            "timestamp": "2025-05-28T15:34:09.118058",
+            "actions": "NORMAL"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "type": "switch",
+        "ip": "N/A",
+        "ports": [],
+        "flows": [
+          {
+            "flow_id": 0,
+            "in_port": "0",
+            "src_ip": "0",
+            "dst_ip": "0",
+            "byte_count": 0,
+            "packet_count": 0,
+            "priority": 65535,
+            "timestamp": "2025-05-28T15:34:09.120549",
+            "actions": "NORMAL"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "id": "link0000000000000002_0000000000000001",
+        "src": {
+          "node_id": "s2",
+          "port_no": "00000001"
+        },
+        "dst": {
+          "node_id": "s1",
+          "port_no": "00000001"
+        },
+        "status": "active"
+      },
+      {
+        "id": "link0000000000000001_0000000000000002",
+        "src": {
+          "node_id": "s1",
+          "port_no": "00000001"
+        },
+        "dst": {
+          "node_id": "s2",
+          "port_no": "00000001"
+        },
+        "status": "active"
+      }
+    ],
+    "last_updated": "2025-05-28T15:34:09.123912"
+  }
+}

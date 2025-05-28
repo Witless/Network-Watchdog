@@ -1,0 +1,3 @@
+.venv
+states/last_state.json
+states/new_state.json
