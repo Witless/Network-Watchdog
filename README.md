@@ -15,17 +15,17 @@ Network Watchdog is a Python application designed to monitor and manage network 
 1. **Initialization**: The application starts by clearing the `last_state.json` file and setting up the monitoring loop.
 2. **Periodic Retrieval**: Every 30 seconds, the application sends a heartbeat to the RYU controller. 
 3. **Failure Handling**: If the RYU controller is unreachable or returns an empty response, the application clones the last known network state to maintain network functionality.
-The cloned network will have the switches, its flows and the links between them but not the hosts as this information
+The cloned network will have the switches, its flows and the links between them but not the hosts as this information.
    isn't provided by the RYU Northbound API 
 4. **State Updates**: The `new_state.json` file is copied to `last_state.json` after every successful retrieval to keep the state up-to-date.
 
 ## Requirements
 
-**Python3** ( requests > 2.31.0, jsonschema > 4.19.0)
+**Python3** ( requests >= 2.31.0, mininet >= 2.3.0)
 
-**Mininet** ( >= 2.3.0)
+**Mininet**
 
-**RYU Controller** ( >= 4.0.0)
+**RYU Controller** 
 
 
 ## Installation
